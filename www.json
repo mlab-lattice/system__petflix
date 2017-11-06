@@ -2,7 +2,7 @@
   "$": {
     "name": "www",
     "type": "service",
-    "description": ""
+    "description": "Service that serves webpage and proxies API requests"
   },
   "components": [
     {

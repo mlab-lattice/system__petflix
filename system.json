@@ -2,7 +2,7 @@
   "$": {
     "name": "petflix",
     "type": "system",
-    "description": ""
+    "description": "My petflix system"
   },
   "subsystems": [
     {

@@ -2,7 +2,7 @@
   "$": {
     "name": "service",
     "type": "service",
-    "description": ""
+    "description": "Backend API"
   },
   "components": [
     {
