@@ -1,0 +1,16 @@
+{
+  "$": {
+    "name": "petflix",
+    "type": "system",
+    "description": ""
+  },
+  "subsystems": [
+    {
+      "$ref": "www.json"
+    },
+    {
+      "$ref": "service.json"
+    }
+  ]
+}
+
