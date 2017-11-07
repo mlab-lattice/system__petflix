@@ -1,16 +1,12 @@
 {
   "$": {
     "name": "petflix",
-    "type": "system",
+    "type": "System",
     "description": "My petflix system"
   },
   "subsystems": [
-    {
-      "$ref": "www.json"
-    },
-    {
-      "$ref": "service.json"
-    }
+    { "$ref": "www.json" },
+    { "$ref": "service.json"}
   ]
 }
 
