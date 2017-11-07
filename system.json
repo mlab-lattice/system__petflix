@@ -3,7 +3,7 @@
   "type": "System",
   "subsystems": [
     { "$ref": "www.json" },
-    { "$ref": "petflix-api.json"}
+    { "$ref": "api.json"}
   ]
 }
 
