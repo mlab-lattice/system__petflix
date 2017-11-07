@@ -1,7 +1,7 @@
 {
   "name": "www",
   "type": "Service",
-  "description": "Webserver for public web app. Serves static files for client and proxies to API."
+  "description": "Webserver for public web app. Serves static files for client and proxies to API.",
   "components": [
     {
       "name": "www",
