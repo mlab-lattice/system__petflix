@@ -2,7 +2,7 @@
   "$": {
     "name": "petflix",
     "type": "System",
-    "description": "My petflix system"
+    "description": "A system for running the amazing Petflix."
   },
   "subsystems": [
     { "$ref": "www.json" },
