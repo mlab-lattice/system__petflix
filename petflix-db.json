@@ -2,32 +2,8 @@
   "name": "petflix-db",
   "type": "MongodService",
   "description": "Petflix database",
-  "components": [
-    {
-      "name": "mongod",
-      "ports": [
-        {
-          "name": "mongod",
-          "port": 27017,
-          "protocol": "TCP"
-        }
-      ],
-      "build": {
-        "type": "DockerImage",
-        "uri": "....",
-      },
-      "exec": {
-        "command": [
-          "docker",
-          "run",
-          "?"
-        ],
-        "environment": {
-        }
-      }
-    }
-  ],
+  "port": 27017,
+  "version": "3.4",
   "resources": {
-    "num_instances": 1
   }
 }
