@@ -1,9 +1,0 @@
-{
-  "name": "petflix-db",
-  "type": "MongodService",
-  "description": "Petflix database",
-  "port": 27017,
-  "version": "3.4",
-  "resources": {
-  }
-}
