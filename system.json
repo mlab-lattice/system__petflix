@@ -1,6 +1,8 @@
 {
-  "name": "petflix",
-  "type": "System",
+  "$": {
+    "name": "petflix",
+    "type": "system"
+  },
   "subsystems": [
     { "$include": "www.json" },
     { "$include": "api.json"}

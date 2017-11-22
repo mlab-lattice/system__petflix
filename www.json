@@ -1,7 +1,7 @@
 {
   "$": {
     "name": "www",
-    "type": "Service",
+    "type": "service",
     "description": "Webserver for public web app. Serves static files for client and proxies to API."
   },
   "components": [
