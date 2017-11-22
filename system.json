@@ -2,8 +2,8 @@
   "name": "petflix",
   "type": "System",
   "subsystems": [
-    { "$ref": "www.json" },
-    { "$ref": "api.json"}
+    { "$include": "www.json" },
+    { "$include": "api.json"}
   ]
 }
 
