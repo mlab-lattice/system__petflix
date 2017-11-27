@@ -35,6 +35,7 @@
     }
   ],
   "resources": {
-    "num_instances": 1
+    "num_instances": 1,
+    "instance_type": "t2.small"
   }
 }
