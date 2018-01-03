@@ -20,7 +20,7 @@
       "build": {
         "git_repository": {
           "url": "https://github.com/mlab-lattice/example-petflix-www",
-          "commit": "3d2acf451eb031694915c8aa755555a09037db80"
+          "commit": "398d7c66ad4c5c012a7d7b4ba3008ed6d86075a3"
         },
         "language": "node:boron",
         "command": "npm install && npm run build"
