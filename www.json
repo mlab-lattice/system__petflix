@@ -30,7 +30,7 @@
           "app.js"
         ],
         "environment": {
-          "PETFLIX_API_URI": "http://api.petflix"
+          "PETFLIX_API_URI": "http://api.petflix.local"
         }
       }
     }
