@@ -1,9 +1,8 @@
 {
-  "$": {
-    "name": "api",
-    "type": "service",
-    "description": "Backend API for Petflix app"
-  },
+  "type": "service",
+  "name": "api",
+  "description": "Backend API for Petflix app",
+
   "components": [
     {
       "name": "api",
