@@ -3,7 +3,7 @@
   "name": "petflix",
 
   "subsystems": [
-    { "$include": "www.json" },
-    { "$include": "api.json"}
+    { "$include": { "url": "www.json" } },
+    { "$include": { "url": "api.json" } },
   ]
 }
