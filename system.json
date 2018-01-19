@@ -4,6 +4,6 @@
 
   "subsystems": [
     { "$include": { "url": "www.json" } },
-    { "$include": { "url": "api.json" } },
+    { "$include": { "url": "api.json" } }
   ]
 }
