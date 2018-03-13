@@ -4,7 +4,7 @@
   "description": "Backend API for Petflix app",
 
   "secrets": {
-	  "mongodb-uri": {}
+    "mongodb-uri": {}
   },
   "components": [
     {
