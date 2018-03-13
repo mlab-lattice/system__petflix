@@ -20,7 +20,7 @@
       "build": {
         "git_repository": {
           "url": "ssh://git@github.com/mlab-lattice/example-petflix-www.git",
-          "commit": "08c58b1e42542af92c7078c8d345f09d00e1eb17",
+          "commit": "8ec9914f4a2fd71107f9a8e75b2f4605c69324b0",
           "ssh_key": { "secret": "ssh-key" }
         },
         "language": "node:boron",
