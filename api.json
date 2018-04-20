@@ -4,7 +4,7 @@
   "description": "Backend API for Petflix app",
 
   "secrets": {
-	  "mongodb-uri": {}
+    "mongodb-uri": {}
   },
   "components": [
     {
@@ -19,7 +19,7 @@
       "build": {
         "git_repository": {
           "url": "https://github.com/mlab-lattice/example-petflix-service.git",
-          "commit": "08c58b1e42542af92c7078c8d345f09d00e1eb17"
+          "commit": "8ec9914f4a2fd71107f9a8e75b2f4605c69324b0"
         },
         "language": "node:boron",
         "command": "npm install"
