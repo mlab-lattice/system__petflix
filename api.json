@@ -3,9 +3,6 @@
   "name": "api",
   "description": "Backend API for Petflix app",
 
-  "secrets": {
-    "mongodb-uri": {}
-  },
   "components": [
     {
       "name": "api",
@@ -30,7 +27,7 @@
           "index.js"
         ],
         "environment": {
-          "MONGODB_URI": { "secret": "mongodb-uri" },
+          "MONGODB_URI": "mongodb://lattice:lattice@ds161873.mlab.com:61873/tim-demo",
           "PORT": "80"
         }
       }
