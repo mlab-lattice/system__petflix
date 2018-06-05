@@ -14,6 +14,22 @@
           "external_access": {
             "public": true
           }
+        },
+        {
+          "name": "http",
+          "port": 8081,
+          "protocol": "HTTP",
+          "external_access": {
+            "public": true
+          }
+        },
+        {
+          "name": "http",
+          "port": 8082,
+          "protocol": "HTTP",
+          "external_access": {
+            "public": true
+          }
         }
       ],
       "build": {
