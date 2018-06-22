@@ -1,6 +1,6 @@
 {
   "type": "service",
-  "name": "www",
+  "name": "wwwΩ",
   "description": "Webserver for public web app. Serves static files for client and proxies to API",
 
   "components": [
