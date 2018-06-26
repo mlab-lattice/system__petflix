@@ -10,7 +10,7 @@
       "commit": "08c58b1e42542af92c7078c8d345f09d00e1eb17"
     },
     "language": "node:boron",
-    "command": "npm install"
+    "command": ["npm install"]
   },
 
   "exec": {

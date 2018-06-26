@@ -15,14 +15,11 @@
       "commit": "8ec9914f4a2fd71107f9a8e75b2f4605c69324b0"
     },
     "language": "node:boron",
-    "command": "npm install && npm run build"
+    "command": ["npm install", "&&", "npm run build"]
   },
 
   "exec": {
-    "command": [
-      "node",
-      "app.js"
-    ],
+    "command": ["node", "app.js"],
     "environment": {
       "PETFLIX_API_URI": "http://api.local"
     }
