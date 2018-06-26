@@ -1,9 +1,8 @@
 {
-  "type": "system",
-  "name": "petflix",
+  "type": "v1/system",
 
-  "subsystems": [
-    { "$include": { "url": "www.json" } },
-    { "$include": { "url": "api.json" } }
-  ]
+  "components": {
+    "www": { "$include": { "url": "www.json" } },
+    "api": {"$include": {"url": "api.json"} }
+  }
 }

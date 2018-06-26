@@ -1,43 +1,34 @@
 {
-  "type": "service",
-  "name": "www",
+  "type": "v1/service",
   "description": "Webserver for public web app. Serves static files for client and proxies to API",
 
-  "components": [
-    {
-      "name": "www",
-      "ports": [
-        {
-          "name": "http",
-          "port": 8080,
-          "protocol": "HTTP",
-          "external_access": {
-            "public": true
-          }
-        }
-      ],
-      "build": {
-        "git_repository": {
-          "url": "https://github.com/mlab-lattice/example-petflix-www.git",
-          "commit": "8ec9914f4a2fd71107f9a8e75b2f4605c69324b0"
-        },
-        "language": "node:boron",
-        "command": "npm install && npm run build"
-      },
-      "exec": {
-        "command": [
-          "node",
-          "app.js"
-        ],
-        "environment": {
-          "PETFLIX_API_URI": "http://api.petflix.local"
-        }
-      }
+  "ports": {
+    "8080": {
+      "protocol": "HTTP",
+      "external_access": { "public": true }
     }
-  ],
-  "resources": {
-    "num_instances": 1,
-    "instance_type": "t2.small"
-  }
+  },
+
+  "build": {
+    "git_repository": {
+      "url": "https://github.com/mlab-lattice/example-petflix-www.git",
+      "commit": "8ec9914f4a2fd71107f9a8e75b2f4605c69324b0"
+    },
+    "language": "node:boron",
+    "command": "npm install && npm run build"
+  },
+
+  "exec": {
+    "command": [
+      "node",
+      "app.js"
+    ],
+    "environment": {
+      "PETFLIX_API_URI": "http://api.local"
+    }
+  },
+
+  "num_instances": 1,
+  "instance_type": "t2.small"
 }
 
