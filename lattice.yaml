@@ -24,7 +24,7 @@ components:
 
     git_repository:
       url: https://github.com/mlab-lattice/example-petflix-www.git
-      branch: master
+      branch: prod
 
     parameters:
       api_url: http://api.local
