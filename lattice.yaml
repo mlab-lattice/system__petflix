@@ -31,11 +31,12 @@ components:
       node_pool: /:main
       num_instances: 2
 
-  ubuntu:
+  mongo:
     type: v1/reference
 
-    file: ubuntu.yaml
+    file: mongo.yaml
 
     parameters:
       node_pool: /:main
+	  version: "3.2"
 

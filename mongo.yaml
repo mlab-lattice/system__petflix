@@ -1,14 +1,16 @@
 $parameters:
   node_pool:
     type: string
+  version:
+    type: string
 
 type: v1/job
 
 build:
   type: docker_image
 
-  repository: library/ubuntu
-  tag: "18.04"
+  repository: library/mongo
+  tag: ${version}
 
 node_pool: ${node_pool}
 
