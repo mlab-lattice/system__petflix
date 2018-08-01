@@ -1,0 +1,41 @@
+type: v1/system
+
+node_pools:
+  main:
+    instance_type: t2.large
+    num_instances: 2
+
+components:
+  api:
+    type: v1/reference
+
+    git_repository:
+      url: https://github.com/mlab-lattice/example-petflix-service.git
+      tag: 1.x
+
+    parameters:
+      mongodb_uri:
+        $secret: mongodb-uri
+      node_pool: /:main
+      num_instances: 2
+
+  www:
+    type: v1/reference
+
+    git_repository:
+      url: https://github.com/mlab-lattice/example-petflix-www.git
+      branch: master
+
+    parameters:
+      api_url: http://api.local
+      node_pool: /:main
+      num_instances: 2
+
+  ubuntu:
+    type: v1/reference
+
+    file: ubuntu.yaml
+
+    parameters:
+      node_pool: /:main
+

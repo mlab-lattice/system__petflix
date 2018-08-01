@@ -1,0 +1,14 @@
+$parameters:
+  node_pool:
+    type: string
+
+type: v1/job
+
+build:
+  type: docker_image
+
+  repository: library/ubuntu
+  tag: "18.04"
+
+node_pool: ${node_pool}
+

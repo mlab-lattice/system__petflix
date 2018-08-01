@@ -1,8 +1,0 @@
-{
-  "type": "v1/system",
-
-  "components": {
-    "www": { "$include": { "url": "www.json" } },
-    "api": {"$include": {"url": "api.json"} }
-  }
-}
