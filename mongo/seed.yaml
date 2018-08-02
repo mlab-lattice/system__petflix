@@ -1,0 +1,35 @@
+$parameters:
+  mongo_uri:
+    type: secret
+  collection:
+    type: string
+    default: petflix
+  node_pool:
+    type: string
+  version:
+    type: string
+
+type: v1/job
+
+build:
+  type: command_build
+
+  source:
+    git_repository:
+      url: https://github.com/mlab-lattice/example-petflix-service.git
+      version: 2.x
+  base_imgae:
+    repository: library/mongo
+    tag: ${version}
+
+exec:
+  environment:
+    MONGO_URI: ${mongo_uri}
+  command:
+  - mongoimport
+  - --uri=$MONGO_URI
+  - --collection=${COLLECTION}
+  - --jsonArray
+  - --file=seed-data.json
+
+node_pool: ${node_pool}

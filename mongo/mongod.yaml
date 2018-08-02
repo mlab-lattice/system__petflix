@@ -4,7 +4,11 @@ $parameters:
   version:
     type: string
 
-type: v1/job
+type: v1/service
+
+ports:
+  "27017":
+    protocol: TCP
 
 build:
   type: docker_image

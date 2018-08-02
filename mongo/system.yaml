@@ -1,0 +1,21 @@
+$parameters:
+  mongo_uri:
+    type: secret
+  node_pool:
+    type: string
+
+type: v1/system
+
+components:
+  mongod:
+    type: v1/reference
+    file: mongod.yaml
+    parameters:
+      node_pool: ${node_pool}
+
+  seed:
+    type: v1/reference
+    file: seed.yaml
+    parameters:
+      mongo_uri: ${mongo_uri}
+      node_pool: ${node_pool}

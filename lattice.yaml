@@ -33,9 +33,10 @@ components:
   mongo:
     type: v1/reference
 
-    file: mongo.yaml
+    file: mongo/system.yaml
 
     parameters:
+	  mongo_uri:
+        $secret: mongo_uri
       node_pool: /:main
-      version: "3.2"
 
