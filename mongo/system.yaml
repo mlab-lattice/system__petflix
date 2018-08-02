@@ -21,7 +21,7 @@ components:
   seed:
     type: v1/reference
     # FIXME: should use current path as context
-    file: seed.yaml
+    file: mongo/seed.yaml
     parameters:
       mongodb_uri: ${mongodb_uri}
       node_pool: ${node_pool}
