@@ -12,13 +12,15 @@ type: v1/system
 components:
   mongod:
     type: v1/reference
-    file: mongod.yaml
+    # FIXME: should use current path as context
+    file: mongo/mongod.yaml
     parameters:
       node_pool: ${node_pool}
       version: ${version}
 
   seed:
     type: v1/reference
+    # FIXME: should use current path as context
     file: seed.yaml
     parameters:
       mongodb_uri: ${mongodb_uri}
