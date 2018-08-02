@@ -21,6 +21,6 @@ components:
     type: v1/reference
     file: seed.yaml
     parameters:
-      mongo_uri: ${mongo_uri}
+      mongodb_uri: ${mongodb_uri}
       node_pool: ${node_pool}
       version: ${version}
