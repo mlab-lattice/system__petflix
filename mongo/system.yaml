@@ -1,5 +1,8 @@
 $parameters:
-  mongo_uri:
+  version:
+    type: string
+    default: "3.2"
+  mongodb_uri:
     type: secret
   node_pool:
     type: string
@@ -12,6 +15,7 @@ components:
     file: mongod.yaml
     parameters:
       node_pool: ${node_pool}
+      version: ${version}
 
   seed:
     type: v1/reference
@@ -19,3 +23,4 @@ components:
     parameters:
       mongo_uri: ${mongo_uri}
       node_pool: ${node_pool}
+      version: ${version}

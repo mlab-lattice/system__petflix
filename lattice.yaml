@@ -11,10 +11,11 @@ components:
 
     git_repository:
       url: https://github.com/mlab-lattice/example-petflix-service.git
-      version: 1.x
+      version: 2.x
 
     parameters:
-      mongodb_uri: mongodb://lattice:lattice@ds161873.mlab.com:61873/tim-demo
+      mongodb_uri:
+        $secret: mongodb_uri
       node_pool: /:main
       num_instances: 2
 
@@ -36,7 +37,7 @@ components:
     file: mongo/system.yaml
 
     parameters:
-      mongo_uri:
-        $secret: mongo_uri
+      mongodb_uri:
+        $secret: mongodb_uri
       node_pool: /:main
 
