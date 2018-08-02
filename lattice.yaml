@@ -36,7 +36,7 @@ components:
     file: mongo/system.yaml
 
     parameters:
-	  mongo_uri:
+      mongo_uri:
         $secret: mongo_uri
       node_pool: /:main
 
