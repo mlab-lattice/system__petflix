@@ -46,7 +46,7 @@ components:
           type: docker_image
 
           repository: library/mongo
-          tag: 3.6
+          tag: "3.6"
 
         node_pool: /:main
 
@@ -62,7 +62,7 @@ components:
               version: 2.x
           base_imgae:
             repository: library/mongo
-            tag: 3.6
+            tag: "3.6"
         
         exec:
           environment:
