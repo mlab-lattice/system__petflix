@@ -62,7 +62,7 @@ components:
               version: 2.x
           base_imgae:
             repository: library/mongo
-            tag: ${version}
+            tag: 3.6
         
         exec:
           environment:
@@ -71,7 +71,7 @@ components:
           command:
           - mongoimport
           - --uri=$MONGO_URI
-          - --collection=${COLLECTION}
+          - --collection=petflix
           - --jsonArray
           - --file=seed-data.json
         
