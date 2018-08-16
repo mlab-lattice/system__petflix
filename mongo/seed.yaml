@@ -29,6 +29,8 @@ exec:
   environment:
     MONGO_URI: ${mongodb_uri}
   command:
+  - /bin/bash
+  - -c
   - mongoimport
   - --uri=$MONGO_URI
   - --collection=${collection}
