@@ -18,7 +18,7 @@ build:
     git_repository:
       url: https://github.com/mlab-lattice/example-petflix-service.git
       version: 2.x
-  base_imgae:
+  base_image:
     repository: library/mongo
     tag: ${version}
 
