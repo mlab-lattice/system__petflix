@@ -1,9 +1,6 @@
 $parameters:
   mongodb_uri:
     type: secret
-  collection:
-    type: string
-    default: petflix
   node_pool:
     type: string
   version:
@@ -33,7 +30,7 @@ exec:
   - -c
   - mongoimport
   - --uri=$MONGO_URI
-  - --collection=${collection}
+  - --collection=petflix
   - --jsonArray
   - --file=seed-data.json
 
