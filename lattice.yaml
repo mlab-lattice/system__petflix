@@ -32,47 +32,11 @@ components:
       num_instances: 2
 
   mongo:
-    type: v1/system
-    
-    components:
-      mongod:
-        type: v1/service
+    type: v1/reference
 
-        ports:
-          "27017":
-            protocol: TCP
-        
-        build:
-          type: docker_image
+    file: mongo/system.yaml
 
-          repository: library/mongo
-          tag: "3.6"
-
-        node_pool: /:main
-
-      seed:
-        type: v1/job
-
-        build:
-          type: command_build
-        
-          source:
-            git_repository:
-              url: https://github.com/mlab-lattice/example-petflix-service.git
-              version: 2.x
-          base_imgae:
-            repository: library/mongo
-            tag: "3.6"
-        
-        exec:
-          environment:
-            MONGO_URI:
-              $secret: mongodb_uri
-          command:
-          - mongoimport
-          - --uri=$MONGO_URI
-          - --collection=petflix
-          - --jsonArray
-          - --file=seed-data.json
-        
-        node_pool: /:main
+    parameters:
+      mongodb_uri:
+        $secret: mongodb_uri
+      node_pool: /:main

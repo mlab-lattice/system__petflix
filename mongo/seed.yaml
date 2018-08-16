@@ -24,7 +24,7 @@ build:
 
 exec:
   environment:
-    MONGO_URI: ${mongo_uri}
+    MONGO_URI: ${mongodb_uri}
   command:
   - mongoimport
   - --uri=$MONGO_URI
