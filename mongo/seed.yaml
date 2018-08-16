@@ -28,7 +28,7 @@ exec:
   command:
   - mongoimport
   - --uri=$MONGO_URI
-  - --collection=${COLLECTION}
+  - --collection=${collection}
   - --jsonArray
   - --file=seed-data.json
 
