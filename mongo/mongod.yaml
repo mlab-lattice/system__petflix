@@ -17,3 +17,4 @@ build:
   tag: ${version}
 
 node_pool: ${node_pool}
+num_instances: 1
