@@ -28,10 +28,6 @@ exec:
   command:
   - /bin/bash
   - -c
-  - mongoimport
-  - --uri=$MONGO_URI
-  - --collection=petflix
-  - --jsonArray
-  - --file=seed-data.json
+  - mongoimport --uri=$MONGO_URI --collection=petflix --jsonArray --file=seed-data.json
 
 node_pool: ${node_pool}
