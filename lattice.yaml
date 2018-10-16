@@ -31,11 +31,3 @@ components:
       node_pool: /:main
       num_instances: 2
 
-  mongo:
-    type: v1/reference
-
-    file: mongo.yaml
-
-    parameters:
-      node_pool: /:main
-      version: "3.2"
